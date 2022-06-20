@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../font/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../font/Lato-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Lato-Regular', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.margin-footer {
+    margin-bottom: 150px;
+    font-size: 16pt;
+    color: #333333;
+    font-family: 'Lato-Bold', sans-serif;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    55% {
+        left: -100%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    90% {
+        left: -200%;
+    }
+
+95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+.nav {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #333333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eaeaea;
+}
+
+a:hover {
+    color: #248EA6;
+    text-decoration: none;
+}
+
+.nav__link--active {
+    color: #25C7D9;
+}
+
+.nav__text {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 14px;
+}
+
+.img-size {
+    width: 40px;
+    margin-bottom: 2px;
+}
+
+.material-icons.md-36 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.img-margin {
+    margin-top: 4px;
+}
+
+.card {
+    border-radius: 30px;
+    border: 2px dashed rgba(14, 179, 173, 0.5);
+}
+
+.card .card-title {
+    font-family: "Lato-Bold";
+    font-size: 22pt;
+}
+
+
+.btn {
+    box-shadow: 5px 5px 10px rgba(214, 214, 214, 0.4);
+    border-radius: 30px;
+    min-width: 80%;
+}
+
+.icon-size {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.btn .line-icon {
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+
+}
+
+/*Animation */
+@keyframes bounceIn {
+
+    from,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.5, 0.61, 0.355, 0.4);
+    }
+
+    0% {
+        opacity: 100;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.95, 0.95, 0.95);
+        transform: scale3d(0.925, 0.925, 0.925);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.card:hover {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.4s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}

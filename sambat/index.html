@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="../img/icon/2022/logo.png">
+  <title>Brawijaya Sambat</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115066231-1"></script>
+  <script>
+
+  </script>
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/emstyle.css">
+  <link rel="stylesheet" href="../css/emsambat.css" />
+  <link rel="stylesheet" href="../css/emsresponsive.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="progress" id="loader">
+    <div class="indeterminate"></div>
+  </div>
+  <div class="overlaycard" data-dismiss="modal" aria-label="Close"></div>
+
+  <!-- <section id="ongoingcontent"> -->
+  <section id="brawijayasambat">
+    <div class="container mt-n4">
+      <a href="../index.html">
+        <i class="fas fa-arrow-left backicon mt-n3" style="font-size: 20px;color: #5d4b75; top:auto"></i>
+      </a>
+      <div class="childpagejumbo">
+        <img src="../img/icon/2022/icon-sambat22.png" style="width: 120pt;" alt="" class="mb-n3" />
+        <h3>Brawijaya Sambat</h3>
+        <hr />
+      </div>
+      <div id="sambat">
+
+
+      </div>
+      <div class="loadsambat">
+        <div id="circle1" class="circle"></div>
+        <div id="circle2" class="circle"></div>
+        <div id="circle3" class="circle"></div>1
+        <!-- <div class="d-flex justify-content-center">
+                      <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div> -->
+      </div>
+    </div>
+    <div class="addsambatwrap">
+      <button type="button" data-toggle="modal" data-target="#modalSambat" class="addsambat">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Modal: modalPoll -->
+  <div class="modal fade right" id="modalSambat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header" style="border-bottom: none;">
+          <!-- <p class="heading lead">Masukkan sambatanmu!
+              </p> -->
+
+          <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="white-text">×</span>
+          </button>
+        </div>
+
+        <!--Body-->
+        <div class="modal-body">
+          <div class="text-center">
+            <!-- <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i> -->
+
+            <div class="sambatcard">
+              <img src="../img/icon/2022/logo.png" class="img-fluid m-auto" alt="">
+              <form action="" id="sambatform">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" readonly>
+                <label for="kontak">Kontak (No. WA / ID Line)</label>
+                <input type="text" id="kontak" name="kontak" placeholder="Agar kamu tahu progress sambatanmu" required>
+                <label for="Kategori">Kategori</label>
+                <select name="kategorisambat" id="kategori">
+                  <option value="ADMINISTRASI">Administrasi</option>
+                  <option value="FASILITAS AKADEMIK">Fasilitas Akademik</option>
+                  <option value="KEMAHASISWAAN">Kemahasiswaan</option>
+                  <option value="KEAMANAN DAN KENYAMANAN">Keamanan dan kenyamanan</option>
+                  <option value="KEUANGAN/UKT">Keuangan/UKT</option>
+                  <option value="HANYA INGIN BERBAGI">Hanya Ingin Berbagi</option>
+
+                </select>
+                <label for="profil">Profil</label>
+                <select name="privasi" id="profil">
+                  <option value="public">Public</option>
+                  <option value="private">Private</option>
+
+                </select>
+                <p class="morecomment mt-2">*Apabila kamu memilih private maka namamu akan disamarkan pada aplikasi ini
+                </p>
+                <textarea placeholder="Apa sambatanmu?" name="isisambat" id="sambatmessage" cols="30" rows="10"
+                  required></textarea>
+                <div class=" sambatcard-bot">
+                  <p class="float-left mb-0 ml-2 text-muted close-modal" data-dismiss="modal">Cancel</p>
+                  <!-- <label for="fileupload" class="sambatupload">
+                        <img src="img/logo2.png" alt="">
+                      </label>
+                      <input type="file" id="fileupload" name="filesambat"> -->
+                  <button type="submit" class="addsambat-submit">Kirim <i class="fas fa-paper-plane"></i></button>
+                </div>
+              </form>
+            </div>
+            <!--Footer-->
+            <!-- <div class="modal-footer justify-content-center">
+              <a type="button" class="btn btn-primary waves-effect waves-light">Send
+                <i class="fa fa-paper-plane ml-1"></i>
+              </a>
+              <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal: modalPoll -->
+  <!-- </section> -->
+  <!-- <div class="sambatcard">
+      <img src="../img/logo2.png" alt="">
+      <form action="" id="sambatform">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" readonly>
+        <label for="Kategori">Kategori</label>
+        <select name="kategorisambat" id="kategori">
+          <option value="ADMINISTRASI">Administrasi</option>
+          <option value="FASILITAS AKADEMIK">Fasilitas Akademik</option>
+          <option value="KEMAHASISWAAN">Kemahasiswaan</option>
+          <option value="KEAMANAN DAN KENYAMANAN">Keamanan dan kenyamanan</option>
+          <option value="KEUANGAN/UKT">Keuangan/UKT</option>
+          <option value="HANYA INGIN BERBAGI">Hanya Ingin Berbagi</option>
+          
+        </select>
+        <label for="profil">Profil</label>
+        <select name="privasi" id="profil">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+        <textarea placeholder="Apa sambatanmu?" name="isisambat" id="sambatmessage" cols="30" rows="10"></textarea>
+                <div class="sambatcard-bot"> -->
+  <!-- <label for="fileupload" class="sambatupload">
+            <img src="img/logo2.png" alt="">
+          </label>
+          <input type="file" id="fileupload" name="filesambat"> -->
+  <!-- <button type="submit" class="addsambat-submit">Kirim <i class="fas fa-paper-plane"></i></button>
+      </div>
+      </form>
+    </div> -->
+  <footer class="text-center">
+    Made with &#x2764; by PUSKOMINFO EM UB 2020 <br>in Collaboration with ADVOKESMA & JAKPUS
+  </footer>
+  <script src="../js/idb.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/pagination.min.js"></script>
+  <script src="../js/sweetalert2.all.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/emsambat2.js"></script>
+
+  <!-- <script src="../js/emapps.js"></script> -->
+</body>
+
+</html>

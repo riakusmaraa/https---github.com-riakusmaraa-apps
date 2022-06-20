@@ -1,0 +1,163 @@
+/*
+  color
+  brown : #4A170D;
+  orange : #DD370C;
+
+*/
+html {
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+body {
+	max-width: 100vw;
+	padding-bottom: 10vh;
+	background: rgb(124, 100, 156);
+	background: linear-gradient(
+		225deg,
+		rgba(124, 100, 156, 1) 0%,
+		rgba(93, 75, 117, 1) 50%
+	);
+}
+
+* {
+	font-family: "Lato-Regular", sans-serif;
+}
+
+.loginicon {
+	width: 120pt;
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 100px; */
+	right: 50px;
+	left: 50px;
+	top: 20px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 2px 0 rgba(60, 64, 67, 0.302),
+		0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.loginform {
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 80vw;
+	/* height: 70vh; */
+	padding-bottom: 30px;
+	padding-top: 15vh;
+	border-radius: 30px;
+	margin-top: 20vh;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 1px 2px 0 rgba(60, 64, 67, 0.302),
+		0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+@media (min-width: 736px) {
+	.loginform {
+		width: 50vw;
+	}
+}
+
+h6 {
+	color: white;
+}
+
+.loginform input {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 35px;
+	width: 80%;
+	border: none;
+	border-radius: 100px;
+	/* border: 1px solid #dd370c; */
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #5d4b75;
+	text-align: center;
+	transition-property: width;
+	transition-duration: 0.3s;
+}
+
+.loginform input::placeholder {
+	color: #5d4b75;
+}
+
+.loginform input:focus {
+	box-shadow: 1px 1px 2px 2px rgba(60, 64, 67, 0.602);
+
+	outline: none;
+}
+
+.loginform h1 {
+	margin-bottom: 25px;
+	font-weight: 300;
+	color: white;
+}
+
+.loginbutton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 80%;
+	border: none;
+	border-radius: 100px;
+
+	background-color: #fcd450;
+	color: white;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	box-shadow: 1px 1px 2px 0 rgba(60, 64, 67, 0.302),
+		0 2px 6px 2px rgba(60, 64, 67, 0.149);
+	transition: all;
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier();
+}
+
+.loginbutton:hover {
+	cursor: pointer;
+	background-color: rgb(236, 207, 58);
+}
+
+p {
+	color: white;
+	font-weight: 300;
+}
+
+#guest {
+	margin-top: 3em;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+#snackbar {
+	visibility: hidden;
+	max-width: 450px;
+	width: 95%;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 30px;
+}
+
+#snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
+}

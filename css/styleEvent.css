@@ -1,0 +1,11 @@
+.childpagejumbo img {
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+}
+
+hr {
+    color: #25C7D9;
+}

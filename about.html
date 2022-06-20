@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>EM APPS</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/emstyle.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/emresponsive.css">
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/sweetalert2.min.css" />
+  <link rel="stylesheet" href="css/animations.scss" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115066231-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-115066231-1");
+  </script>
+</head>
+
+<body style="background-color: #25C7D9;">
+  <section id="haipuskom">
+    <img src="" alt="" class="jumbopusk" />
+    <div class="container">
+      <h3 id="haityped" class="text-white"></h3>
+      <a href="https://em.ub.ac.id/puskominfo">
+        <button class="btn embtn">
+          Meet our developers
+        </button>
+      </a>
+    </div>
+    <div class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+        </div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')">
+        </div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="https://em.ub.ac.id" class="nav__link">
+      <i class="img-margin nav__icon"><img class="img-size" src="img/logo-em.png" alt=""></i>
+      <span class="nav__text">Profile</span>
+    </a>
+    <a href="index.html" class="nav__link">
+      <i class=" material-icons md-36 md-light nav__icon">home</i>
+      <span class="nav__text">Beranda</span>
+    </a>
+    <a href="about.html" class="nav__link nav__link--active">
+      <i class=" material-icons md-36 nav__icon">face</i>
+      <span class="nav__text">Tentang Kami</span>
+    </a>
+    <a href="profile.html" class="nav__link">
+      <i class=" material-icons md-36 nav__icon">person</i>
+      <span class="nav__text">Saya</span>
+    </a>
+  </nav>
+  <!-- Akhir Nav -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/emapps.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/scripthome.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script>
+    var typed = new Typed("#haityped", {
+      strings: ["Mau tau siapa yang bikin EM APPS? ^1000"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      fadeOut: true
+    });
+  </script>
+</body>
+
+</html>

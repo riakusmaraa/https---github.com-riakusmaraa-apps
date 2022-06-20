@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body,html{
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.masthead {
+  height: 100vh;
+  background-image: url('../images/bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-header{
+  border-radius: 50%;
+  height: 30vh;
+}
+.jasa-css{
+  height: 100vh;
+  background-image: url('../images/bg-jasa.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-nav{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 10vh;
+}
+.foto-jasa{
+  height: 40vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.jarak{
+  margin-top: 30px;
+}
+.img-jasa{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 25vh;
+  width: 90%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.lines{
+  justify-content: center;
+  background-color: #7AF1EE;
+  height: 2px;
+  width: 150px;
+}
+.lines-white{
+  justify-content: center;
+  background-color: #fff;
+  height: 2px;
+  width: 150px;
+  margin-bottom: 20px
+}
+.spacing{
+  height: 100px
+}
+.bg2{
+  height: 100vh;
+  background-image: url('../images/bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.spacing2{
+  height: 50px
+}
+.spacing-x{
+  height:400px;
+}
+.card-img-top{
+  height: 200px;
+}
+.bg3{
+  height: 100vh;
+  background-image: url('../images/bg3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg4{
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../images/bg4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.extensi{
+  height: 30vh;
+  background-image: url('../images/extensi.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tambahan{
+  height: 50vh;
+  background-image: url('../images/ekstensi.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.produk-bumm{
+  margin-top: 40px;
+}
+.item-fisik{
+  height: 40vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.cards{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.go-button{
+  height: 30px;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #fec200;
+}
+.go-button-2{
+  height: 30px;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #7AF1EE;
+}
+.rounds{
+  height: 30vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .spacing-x{
+    height: 210px;
+  }
+  .jas-last{
+    height: 100px;
+  }
+  .service{
+    width: 100%;
+  }
+  .item-fisik{
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 765px){
+  .spacing-x{
+    height: 210px;
+  }
+}
+@media screen and (max-width: 580px){
+  .item-fisik{
+    height: 50vh;
+  }
+}

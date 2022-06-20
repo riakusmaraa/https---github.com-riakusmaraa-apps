@@ -1,0 +1,411 @@
+#brawijayasambat {
+	position: relative;
+}
+
+.overlaycard {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	cursor: pointer;
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
+.sambatwrap {
+	position: relative;
+	margin-bottom: 1.5em;
+}
+
+@media (min-width: 976px) {
+	.sambatwrap {
+		width: 50% !important;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.sambathead {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.sambatprofpict,
+.sambatcomment-content-proftpic {
+	width: 15%;
+}
+
+.sambatprofpict img,
+.sambatcomment-content-proftpic img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30pt;
+}
+
+.sambatts,
+.sambatcomment-content-comment {
+	width: 85%;
+}
+
+.sambatts h6 {
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+
+.sambatcomment-content-comment h6 {
+	margin-bottom: 0;
+	font-size: 13px;
+}
+
+.sambatts p,
+.sambatcomment-content-comment p {
+	margin-bottom: 0;
+	font-size: 12.5px;
+	color: black;
+}
+
+.sambatcontent {
+	font-size: 0.9em;
+	color: rgb(31, 31, 31);
+	word-wrap: break-word;
+}
+
+.sambatcomment-count {
+	/* display: flex; */
+
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0.3em;
+}
+
+.sambatcomment-count img {
+	width: 15pt;
+	margin-right: 3px;
+}
+
+.sambatcomment-count i {
+	width: 7%;
+}
+
+.sambatcomment-count p {
+	width: 93%;
+	display: contents;
+	font-size: 13px;
+	color: grey;
+	margin-bottom: 0;
+}
+
+.sambatcomment-box {
+	position: relative;
+	background-color: rgba(226, 226, 226, 0.25);
+	border-radius: 10px;
+	padding: 10px 5px 10px 5px;
+}
+
+.sambatcomment-content {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0px 5px 0px;
+	padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+
+.addcomment-box {
+	display: flex;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+}
+
+.addcomment-box img {
+	width: 18pt;
+}
+
+.addcomment {
+	width: 90%;
+	border: none;
+	font-size: 13px;
+}
+
+.addcomment:focus {
+	outline: none;
+}
+
+.addcomment-box button {
+	width: 10%;
+	background-color: transparent;
+	border: none;
+	color: #25c7d9;
+}
+
+.addcomment-box button:focus {
+	outline: none;
+}
+
+.addcomment::placeholder {
+	font-size: 12px;
+}
+
+.sambatline {
+	/* position: absolute;
+  bottom: 0; */
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top: 1px solid rgba(177, 177, 177, 0.473);
+}
+
+.morecomment {
+	color: grey;
+	font-size: 12px;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+
+.addsambatwrap {
+	position: relative;
+}
+
+.addsambat {
+	position: fixed;
+	bottom: 5%;
+	right: 10%;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #D46A24;
+	box-shadow: 1px 1px 2px rgba(131, 131, 131, 0.521);
+	z-index: 10;
+	border: none;
+}
+
+.addsambat i {
+	text-align: center;
+	display: block;
+
+	color: white;
+}
+
+.addsambat:hover {
+	cursor: pointer;
+}
+
+/* .sambatcard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  margin: 5vh auto 5vh auto;
+  width: 300px;
+  height: 0px;
+  overflow: scroll;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px rgba(61, 61, 61, 0.521);
+  padding: 10px 0 10px 0;
+  z-index: 15;
+  background-color: white;
+  transition: all 0.8s ease-in-out;
+} */
+
+.sambatcard::-webkit-scrollbar {
+	display: none;
+}
+
+.modal-content {
+	border-radius: 30px;
+	background-color: rgb(255, 255, 255);
+	margin: auto;
+}
+
+.sambatcard img {
+	display: block;
+	width: 100pt;
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px rgba(161, 161, 161, 0.52);
+	background-color: #d9f2f5;
+}
+
+.sambatcard label {
+	display: block;
+	margin-left: 15px;
+	text-align: left;
+}
+
+.sambatcard input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid rgba(177, 177, 177, 0.473);
+	padding: 5px 15px 5px 15px;
+	transition: all 0.2s ease-in-out;
+}
+
+.sambatcard input:focus,
+.sambatcard select:focus {
+	outline: none;
+	border-bottom: 1px solid #D46A24;
+}
+
+.sambatcard select {
+	width: 100%;
+	border: none;
+	padding: 5px 15px 5px 10px;
+}
+
+.sambatcard select option {
+	border: 1px solid rgba(78, 78, 78, 0.671);
+}
+
+/* .sambatcard select:focus {
+  outline: none;
+  border-bottom: 1px solid #dd360c86;
+} */
+.sambatcard textarea {
+	width: 100%;
+	height: 200px;
+	overflow: scroll;
+	border: none;
+	margin: 20px 0 10px 0;
+	padding: 15px;
+	resize: none;
+}
+
+.sambatcard textarea::-webkit-scrollbar {
+	display: none;
+}
+
+.sambatcard textarea:focus {
+	outline: none;
+}
+
+.sambatcard-bot {
+	display: block;
+	position: relative;
+}
+
+.sambatcard-bot input {
+	display: block;
+}
+
+.addsambat-submit {
+	display: block;
+	margin: 0 10px auto auto;
+	background-color: transparent;
+	border: none;
+	color: #D46A24;
+}
+
+#fileupload {
+	display: none;
+}
+
+.sambatupload img {
+	width: 20pt;
+	float: left;
+	margin: auto auto auto 5px;
+}
+
+.sambatcategory {
+	font-size: 0.6em;
+	padding: 3px 5px 3px 5px;
+	background-color: #5d4b75;
+	color: white;
+	border-radius: 5px;
+}
+
+.readmore {
+	color: #5d4b75;
+}
+
+.loadsambat {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 70px;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #5d4b75;
+	border-radius: 50px;
+	transition: all 0.2s ease-in-out;
+}
+
+.loadsambat:hover {
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.circle {
+	width: 8px;
+	height: 8px;
+	background-color: #5d4b75;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.bounce1 {
+	animation: bouncing 0.875s ease-in-out 0s infinite;
+}
+
+.bounce2 {
+	animation: bouncing 0.875s ease-in-out 0.2s infinite;
+}
+
+.bounce3 {
+	animation: bouncing 0.875s ease-in-out 0.4s infinite;
+}
+
+@keyframes bouncing {
+	0% {
+		transform: translateY(0px);
+		background-color: #5d4b75;
+	}
+
+	25% {
+		transform: translateY(-7px);
+		background-color: #d9f2f5;
+	}
+
+	50% {
+		transform: translateY(0px);
+		background-color: #5d4b75;
+	}
+
+	75% {
+		transform: translateY(0px);
+		background-color: #5d4b75;
+	}
+
+	100% {
+		transform: translateY(0px);
+		background-color: #5d4b75;
+	}
+}
+
+.paginationjs {
+	display: none;
+}
+
+.morecomment {
+	font-size: 13px;
+}
+
+.commenttime {
+	font-size: 10px;
+	color: grey;
+}

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+@font-face {
+  font-family: "RubikBI";
+  src: url("../font/Rubik-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubikr";
+  src: url("../font/Rubik-Regular.ttf") format("truetype");
+}
+
+html,
+body {
+  background: linear-gradient(
+    225deg,
+    rgba(60, 15, 47, 1) 0%,
+    rgba(159, 27, 49, 1) 50%
+  );
+
+  font-family: "RubikBI", "Rubikr";
+  padding-bottom: 5vh;
+}
+
+.sweet-alert {
+  margin-top: 0 !important;
+  transform: translateY(-50%);
+  /* padding-top: 10vh;
+  padding-bottom: 10vh; */
+  /* overflow: scroll; */
+}
+
+.boxguide {
+  padding: 15px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.boxcapt {
+  padding: 15px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#twibname {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  width: 60%;
+  text-align: center;
+}
+#twibname::placeholder {
+  color: black;
+}
+#twibname:focus {
+  outline: none;
+}
+#twibname textarea {
+  font-size: 14px !important;
+}
+.linktext {
+  width: 100%;
+  height: 420px;
+  color: white;
+
+  overflow-wrap: break-word;
+  font-size: 0.8rem;
+  border: none;
+  resize: none;
+  background-color: transparent;
+}
+.linktext:focus {
+  outline: none;
+}
+.sweet-alert button {
+  background-color: #000;
+  font-weight: bold;
+  padding: 12px;
+  margin-top: 0px;
+}
+.sweet-alert img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sa-button-container {
+  display: none;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(159, 27, 49, 1);
+  transition: all 400ms ease;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: rgba(60, 15, 47, 1);
+  color: #000;
+}
+
+.inputfile + label {
+  cursor: pointer;
+}
+
+.croppie-container {
+  padding: 10px;
+  touch-action: none;
+}
+.croppie-container .cr-slider-wrap {
+  margin-top: 5px;
+}
+.cr-slider {
+  visibility: hidden;
+}
+.cr-slider:before {
+  content: "+";
+  position: absolute;
+  top: 305px;
+  font-size: 20px;
+  right: 32px;
+  color: #000;
+  font-weight: 700;
+}
+.cr-slider:after {
+  content: "-";
+  position: absolute;
+  top: 305px;
+  color: #000;
+  font-size: 20px;
+  left: 38px;
+  font-weight: 700;
+}
+.cr-boundary {
+  position: relative;
+  background-color: #ccc;
+}
+
+.cr-boundary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-image: url("../img/twibbon.png"); */
+  background-size: 100%;
+}
+
+.twibtitle {
+  padding-top: 3em;
+  margin-bottom: 4em;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.robofont {
+  font-family: "Roboto", sans-serif;
+}
+
+.uploader {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-bottom: 20px;
+}
+.uploadlogo {
+  width: 85pt;
+  margin-top: -85px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #f7edd5;
+  box-shadow: 1px 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.image-canvas {
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-pic-wrap {
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  padding: 13px;
+  font-weight: bold;
+  color: white !important;
+  border-radius: 5px;
+  background-color: rgba(159, 27, 49, 1);
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.button:hover {
+  background-color: rgba(60, 15, 47, 1);
+  color: #000;
+}
+.canvasname {
+  margin-top: -50px;
+  z-index: 9999999;
+}

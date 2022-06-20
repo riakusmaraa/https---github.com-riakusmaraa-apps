@@ -1,0 +1,132 @@
+body{
+    font-family: sans-serif;
+}
+
+/* Panel  Events */
+.info-panel{
+    background-color: white;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -75px;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+.info-panel a{
+    color: #3b3b3b;
+}
+.info-panel a:hover{
+    color: #13b3ad;
+    text-decoration: none;
+}
+.info-panel img{
+    align-items: center;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.info-panel h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.info-panel p{
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+/* Row Title */
+.row-title{
+    padding: 15px;
+}
+.row-title a{
+    color: #3b3b3b;
+}
+.row-title a:hover{
+    color: #13b3ad;
+    text-decoration: none;
+}
+.title a:hover{
+    color: #3b3b3b;
+}
+
+.about{
+    text-align: justify;
+}
+
+/* Card */
+.card-img-top{
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-link{
+    color: #3b3b3b !important;
+    text-decoration: none;
+}
+
+/* Konten Samping */
+.samping-bagian{
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.samping-judul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.samping-judul a {
+    color: #3b3b3b;
+}
+.samping-judul a:hover{
+    color: #13b3ad;
+    text-decoration: none;
+}
+
+.samping-card-title{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer */
+.footer{
+    padding-bottom: 10px;
+}
+.media img{
+    width: 75px;
+}
+.media-body{
+    margin-top: 25px;
+}
+
+/* Desktop Version */
+@media (min-width: 992px){
+    
+    .nav-link{
+        margin-right: 15px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #3b3b3b;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .samping-konten{
+        background-color: whitesmoke;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+
+    .samping-bagian{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+
+}

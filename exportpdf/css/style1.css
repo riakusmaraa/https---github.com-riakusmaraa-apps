@@ -1,0 +1,47 @@
+body {
+  background-image: url("bgsurat2021.png");
+  background-image-resize: 6;
+  background-repeat: no-repeat;
+}
+.isi {
+  /*padding-top: 120px;*/
+}
+body {
+  font-family: serif;
+  font-size: 12pt;
+}
+div {
+  margin-top: 0px;
+}
+img {
+}
+.kotak td {
+  /*border: 1px solid #000000;*/
+  padding-left: 15px;
+  text-align: left;
+  text-align: top;
+}
+.kotak th {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  /*border: 1px solid #000000;*/
+  background-color: #5b4f81;
+  color: white;
+}
+.kotak tr:nth-child(even) {
+  background-color: #f2d338;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding-bottom: 0px;
+}
+h2 {
+  margin-top: 25px;
+  padding-bottom: 0px;
+}
+td {
+  line-height: 1.6;
+  vertical-align: top;
+}

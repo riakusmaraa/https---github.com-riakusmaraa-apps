@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Pendataan Staf EM UB</title>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="stylesheet" href="css/pendataan.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/sweetalert2.min.css"/>
+</head>
+<body>
+<section id="formbody">
+    <div class="formregist">
+        <div class="headerform">
+            <h1>Pendataan Staf EM UB 2019</h1>
+        </div>
+        <div class="formcontent">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img
+                            id="foto"
+                            src="img/icon/aboutus.svg"
+                            alt=""
+                            class="formimg"
+                    />
+                    <p id="nim">Nim</p>
+                    <p id="nama">Nama</p>
+                    <p id="fakultas">Fakultas</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="mt-5">Jenis Kelamin</h6>
+                    <input type="radio" name="jenis_kelamin" value="L"/>
+                    Laki-laki
+                    <input
+                            type="radio"
+                            name="jenis_kelamin"
+                            value="P"
+                            class="mb-3"
+                    />Perempuan
+                    <select name="" id="agama" required>
+                        <option value="ISLAM">ISLAM</option>
+                        <option value="KATOLIK">KATOLIK</option>
+                        <option value="KRISTEN">KRISTEN</option>
+                        <option value="BUDHA">BUDHA</option>
+                        <option value="HINDU">HINDU</option>
+                        <option value="KONGHUCU">KONGHUCU</option>
+                    </select>
+
+                    <input type="number" id="hp" placeholder="no hp" required/>
+                    <input type="text" id="ig" placeholder="IG" required/>
+                    <input type="text" id="line" placeholder="Line" required/>
+                    <h6>Kementerian</h6>
+                    <select name="" id="kementerian" required>
+                        <option value="2">Admimnistrasi Kesekretariatan</option>
+                        <option value="3">Administrasi Keuangan</option>
+                        <option value="4">Ekonomi Kreatif</option>
+                        <option value="5">Pusat Jaminan Mutu Organisasi</option>
+                        <option value="6">Pusat Komunikasi dan Informasi</option>
+                        <option value="7">Studi Data dan Kreativitas</option>
+                        <option value="8">Advokasi dan Kesejahteraan Mahasiswa</option>
+                        <option value="9">Kebijakan Kampus</option>
+                        <option value="10">Kebijakan Wilayan Nasional</option>
+                        <option value="11">Sosial Masyarakat</option>
+                        <option value="12">Lingkungan Hidup</option>
+                        <option value="13">Brawijaya Mengajar</option>
+                        <option value="14">Pengembangan Sumber Daya Mahasiswa</option>
+                        <option value="15">Jaringan Publik</option>
+                        <option value="16">Pemuda dan Olahraga</option>
+                    </select>
+                    <h6>Ukuran PDH</h6>
+                    <select name="" id="pdh" required>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XXXL">XXXL</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submit" class="btnsubmit">Submit</button>
+        </div>
+    </div>
+    <div id="snackbar">A new version of this app is available. Click <a href="javascript:void(0);" id="reload">here</a>
+        to update.
+    </div>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/pendataan.js"></script>
+<script src="js/load-sw.js"></script>
+</body>
+</html>

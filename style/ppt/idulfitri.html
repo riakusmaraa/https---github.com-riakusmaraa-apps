@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Idul Fitri EM</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/croppie.css" />
+    <link rel="stylesheet" href="css/sweetalert.css" />
+    <link rel="stylesheet" href="css/emtwib.css" />
+    <link rel="stylesheet" href="css/twibidulfitri.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="twibtitle">
+        <h1 class="title font-weight-lighter">TWIBBON</h1>
+        <h3 class="title font-weight-lighter">Idul Fitri EM UB 2019</h3>
+        <br />
+      </div>
+      <div class="row robofont">
+        <div class="col-md-6">
+          <div class="uploader">
+            <img src="img/logo.png" class="uploadlogo" alt="" />
+            <canvas id="imageCanvas" class="image-canvas"></canvas>
+
+            <div class="profile-pic-wrap">
+              <div id="demo-basic"></div>
+            </div>
+
+            <div class="mb-3">
+              <!-- <p class="text-center text-black">Masukkan Nama Kamu:</p> -->
+              <input
+                id="twibname"
+                type="text"
+                placeholder="Masukkan nama kamu"
+                maxlength="15"
+              />
+            </div>
+            <div class="download-button">
+              <input
+                type="file"
+                name="file"
+                id="imageLoader"
+                class="inputfile"
+                accept="image/*"
+              />
+              <label for="imageLoader" class="button">Pilih Foto</label>
+              <a class="basic-result button">Tampilkan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div id="caption" class="boxcapt mt-3">
+            <h5>
+              Caption Twibbon
+              <span class="h6 font-weight-light">(click to copy)</span>
+            </h5>
+            <textarea name="" id="" readonly class="linktext">
+Rampung bulat ibadah ramadhan Malam pun ramai dengan takbiran Pertanda esok hari kita lebaran Silaturahmi dan bermaaf-maafan&#13;&#13;Sambang saudara penuh godaan
+kue bolu dan rengginang jadi suguhan
+Hari lebaran berkunjung lebar-an
+Namun intinya jalin persaudaraan&#13;&#13;
+(Nama) sekeluarga mengucapkan selamat hari raya idul fitri 
+maaf jika ada kesan tak terpuji
+insyaallah siap berbenah diri 
+dan awet terus silaturahmi&#13;&#13
+#lebaran2019&#13;#idulfitri&#13;#bukanlebar_an&#13;#EMangAsik&#13;#temanUB&#13;#indonesiaDamai
+              </textarea
+            >
+          </div>
+          <div class="alert alert-secondary fade d-none" role="alert">
+            Link berhasil dicopy!
+            <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a href="index.html">
+        <p class="text-center mt-3 text-white font-weight-light robofont">
+          &#8592; back to EM - Twib
+        </p>
+      </a>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/croppie.js"></script>
+    <script src="js/load-image.all.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/emtwib.js"></script>
+  </body>
+</html>

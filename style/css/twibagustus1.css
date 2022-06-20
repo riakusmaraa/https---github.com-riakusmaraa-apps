@@ -1,0 +1,14 @@
+.cr-boundary::before {
+    background-image: url("../img/HUT_RI.png");
+  }
+  .sweet-alert p img {
+    width: 50% !important;
+    height: 50% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .uploader {
+    width: 92%;
+  }
+  

@@ -1,0 +1,40 @@
+select {
+  display: block;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(116, 116, 116);
+}
+select:focus {
+  outline: none;
+}
+select option {
+  background-color: transparent;
+}
+label:focus {
+  transform: translateY(-15px);
+}
+.myd-none {
+  display: none;
+}
+.formlogo {
+  position: absolute;
+  left: 5%;
+  width: 50px;
+}
+.refreshbtn {
+  /* border: 1px solid #dd370c; */
+  border: none;
+  background-color: #9c1d32;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  color: white;
+  /* display: block; */
+  /* width: 100%; */
+  /* position: absolute; */
+  margin: 1.5em auto 5px auto;
+  text-align: center;
+
+  /* background-color: transparent; */
+}
+/* #select_kelamin {
+  margin-top: 15px;
+} */

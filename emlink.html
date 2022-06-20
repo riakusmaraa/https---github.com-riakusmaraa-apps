@@ -1,0 +1,81 @@
+<html lang="en">
+	<head>
+		<!--  Favicon -->
+		<link rel="shortcut icon" href="img/icon/logo.png" />
+		<!-- Favicon -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-115066231-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-115066231-1");
+		</script>
+		<script>
+			function copy() {
+				$("#my_links").select();
+				document.execCommand("copy");
+				Swal.fire({
+					type: "success",
+					title: "Selamat!",
+					text: "Link berhasil dicopy",
+				});
+			}
+
+			function reload() {
+				location.reload(true);
+			}
+		</script>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/emlogin.css" rel="stylesheet" />
+		<link href="css/emsresponsive.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/sweetalert2.min.css" />
+		<title>Shorten LINK-EM</title>
+		<link rel="manifest" href="manifest.json" />
+	</head>
+
+	<body>
+		<a href="index.html">
+			<i class="fas fa-arrow-left backicon"></i>
+		</a>
+		<img src="img/LOGO EM UB 2021.png" alt="" class="loginicon" />
+		<div class="loginform">
+			<h1 class="text-center" style="font-weight: bolder">EM - Link</h1>
+			<div id="login" class="text-center">
+				<h6 class="text-center">Taruh linkmu disini</h6>
+				<input
+					name="url_data"
+					id="url_data"
+					type="text"
+					placeholder=""
+					autofocus
+				/>
+				<h6 class="text-center">Nama link yang kamu inginkan</h6>
+				<input name="url_data" id="url_custom" type="text" placeholder="" />
+				<button type="button" id="submit" class="loginbutton">Tekan Aku</button>
+				<a href="index.html">
+					<p class="text-center mt-3 text-white">&#8592; back to menu</p>
+				</a>
+			</div>
+		</div>
+		<div id="snackbar">
+			A new version of this app is available. Click
+			<a href="javascript:void(0);" id="reload">here</a>
+			to update.
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/sweetalert2.all.min.js"></script>
+		<script src="js/idb.js"></script>
+		<script src="js/emlink.js"></script>
+	</body>
+</html>

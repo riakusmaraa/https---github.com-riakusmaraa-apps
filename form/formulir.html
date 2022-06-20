@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORMULIR EM UB 2021</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.0.0-beta.1.0.1/dist/css/mstepper.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="emergency.css">
+    <link href="../img/icon/logo.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115066231-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115066231-1');
+    </script>
+</head>
+
+<!-- <body class="" style="background:linear-gradient(
+    225deg,
+    rgba(36, 142, 166, 1) 0%,
+    rgba(37, 199, 217, 1) 50%
+  )"> -->
+<body class="" style="background: linear-gradient(225deg,#5b4f81 0%,#796f9b 50%);">
+  <!-- <div class="progress" id="loader">
+        <div class="indeterminate"></div>
+      </div>
+      <div id="refreshbtn"></div> -->
+    <br>
+    
+    <div class="container row z-depth-3 section grey lighten-3">
+        <!-- <img src="../img/LOGO_EM_2020.png" class="formlogo" alt=""> -->
+        <div class="col s12 l3 center-align">
+            <br>
+            <img id="foto" src=""alt="" style="max-width: 150px">
+                <h6 id="nim"></h6>
+            <h6 id="nama"></h6>
+            <h6 id="fak"></h6>
+            
+            
+            
+        </div>
+
+        <div class="col s12 l9">
+            <div class="center-align">
+                <h4>FORMULIR</h4>
+                <h5>EM UB 2021</h5>
+            </div>
+            
+            <div class="">
+                <div class="row">
+                    
+                        <ul class="stepper linear">
+                            <li class="step">
+                                <div class="step-title waves-effect waves-dark">Data Diri</div>
+                                <div class="step-content">
+                                    <p>Formulir diisi dengan data diri yang sebenar-benarnya atau valid</p>
+                                    <div class="row">
+                                        <div class="input-field col s6 ">
+
+                                            <select id="select_kelamin"name="jenis_kelamin" >
+                                                <!-- <option id="select_kelamin1" >--Jenis Kelamin</option> -->
+                                                <option value="L" selected>Laki - laki</option>
+                                                <option value="P">Perempuan</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input id="ipk" name="ipk" type="text" class="validate">
+                                            <label for="ipk">IPK</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="panggilan" name="panggilan" type="text" class="validate">
+                                            <label for="panggilan">Panggilan</label>
+
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="cita" name="cita" type="text" class="validate">
+                                            <label for="cita">Cita-cita tahun 2030</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input  id="tempat" name="tempat_lahir" type="text" class="validate">
+                                            <label for="tempat">Tempat Lahir</label>
+
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="lahir" name="tanggal_lahir" type="date" class="datepicker validate">
+                                            <label for="lahir">Tanggal Lahir</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                    <!-- <input type="text" id="select_darah"> -->
+                                        <div class="input-field col s6">
+                                            <select id="select_darah"name="darah">
+                                                <!-- <option value="" disabled selected>-- Golongan Darah</option> -->
+                                                <option value="A" selected>Golongan Darah A</option>
+                                                <option id="goldarb"value="B">Golongan Darah B</option>
+                                                <option value="AB">Golongan Darah AB</option>
+                                                <option value="O">Golongan Darah O</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <select id="select_agama"name="agama">
+                                                <!-- <option value="" disabled selected>-- Agama</option> -->
+                                                <option value="ISLAM" selected>ISLAM</option>
+                                                <option value="KATOLIK">KATOLIK</option>
+                                                <option value="KRISTEN">KRISTEN</option>
+                                                <option value="HINDU">HINDU</option>
+                                                <option value="BUDHA">BUDHA</option>
+                                                <option value="KONGHUCU">KONGHUCHU</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input  id="anak" name="anak" type="number" class="validate">
+                                            <label for="anak">Anak Ke</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="dari" name="dari" type="number" class=" validate">
+                                            <label for="dari">Dari Bersaudara</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="asal" name="alamat_asal" type="text" class="validate">
+                                            <label for="asal">Alamat Asal</label>
+
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="malang" name="alamat_malang" type="text" class=" validate">
+                                            <label for="malang">Alamat Malang</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input  id="hp" name="telp" type="number" class="validate">
+                                            <label for="hp">No.Telepon</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="line" name="line" type="text" class=" validate">
+                                            <label for="line">ID Line</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="email" name="email" type="text" class=" validate">
+                                            <label for="email">E-mail</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="ig" name="ig" type="text" class=" validate">
+                                            <label for="ig">Instagram</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="ortu" name="kontak_ortu" type="number" class="validate">
+                                            <label for="ortu">No.Telepon Orang Tua</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="wali" name="wali" type="text" class=" validate">
+                                            <label for="wali">No. Telepon Wali/Orang Terdekat</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input  id="hobi" name="hobi" type="text" class="validate">
+                                            <label for="hobi">Hobi</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input  id="motto" name="motto" type="text" class=" validate">
+                                            <label for="motto">Motto Hidup</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input  id="sakit" name="riwayat_sakit" type="text" class=" validate">
+                                            <label for="sakit">Riwayat Sakit</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="input-field col s9">
+                                                
+                                                <!-- <select name="pdh" id="pdh">
+                                                    <option value="" disabled selected>-- UKURAN PDH --</option>
+                                                    <option value="S">S (54, 64, 58, 42)</option>
+                                                    <option value="M">M (56, 68, 59, 45)</option>
+                                                    <option value="L">L (58, 70, 60, 46)</option>
+                                                    <option value="XL">XL (60, 73, 61, 48)</option>
+                                                    <option value="XXL">XXL (63, 75, 61.5 50)</option>
+                                                    <option value="3XL">3XL (66, 76, 62, 52)</option>
+                                                </select> -->
+                                            
+                                            </div>
+                                         
+                                        </div>
+                                    <div class="step-actions">
+                                        <button id="biodataclick"class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing">Continue</button>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li id="step_title"class="step">
+                                <div class="step-title waves-effect waves-dark" >S W O T</div>
+                                <div class="step-content">
+
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <textarea id="strengths" class="materialize-textarea" name="strengths"
+                                                ></textarea>
+                                            <!-- <input  id="strengths" name="strengths" type="text" class="validate"> -->
+                                            <label for="strengths">Strengths</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                                <textarea id="weaknesses" class="materialize-textarea" name="weaknesses"
+                                                    ></textarea>
+                                            <!-- <input  id="weaknesses" name="weaknesses" type="text" class=" validate"> -->
+                                            <label for="weaknesses">Weaknesses & Solusi</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                                <textarea id="opportunities" class="materialize-textarea" name="opportunities"
+                                                    ></textarea>
+                                            <!-- <input  id="opportunities" name="opportunities" type="text" class=" validate"> -->
+                                            <label for="opportunities">Opportunities</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                                <textarea id="threats" class="materialize-textarea" name="threats"
+                                                    ></textarea>
+                                            <!-- <input  id="threats" name="threats" type="text" class=" validate"> -->
+                                            <label for="threats">Threats & Solusi</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="step-actions">
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing" id="swotclick">Continue</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="step ">
+                                <div class="step-title waves-effect waves-dark">Riwayat Pendidikan</div>
+                                <div class="step-content">
+                                    <h5>Pendidikan Formal</h5>
+                                    
+                                    <div class="row" id="pf">
+                                        
+                                        
+                                            <div class="input-field col s4">
+                                                <input id="jenjang_pf" name="jenjang_pf[]" value="" type="text" class="validate">
+                                                <label for="jenjang_pf">Jenjang</label>
+
+                                            </div>
+                                            <div class="input-field col s4">
+                                                <input id="instansi_pf" name="instansi_pf[]" value=""type="text" class=" validate">
+                                                <label for="instansi_pf">Instansi</label>
+
+                                            </div>
+                                            <div class="input-field col s3">
+                                                <input id="tahun_pf" name="tahun_pf[]" value="" type="number" class=" validate">
+                                                <label for="tahun_pf">Tahun</label>
+                                            
+                                            </div>
+                                            <div class="input-field col s1">
+                                                             <button class="btn-floating  btn-small" type="button" id="addpf"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+                                            
+        
+                                        
+                                        
+                                    </div>
+                                    <br>
+                                    <h5>Pendidikan Non Formal</h5>
+                                    
+                                    <div class="row" id="pnf">
+                                        
+                                        
+                                            <div class="input-field col s4">
+                                                <input id="jenjang_pnf" name="jenjang_pnf[]" value="" type="text" class="validate">
+                                                <label for="jenjang_pnf">Jenjang</label>
+
+                                            </div>
+                                            <div class="input-field col s4">
+                                                <input id="instansi_pnf" name="instansi_pnf[]" type="text" value="" class=" validate">
+                                                <label for="instansi_pnf">Instansi</label>
+
+                                            </div>
+                                            <div class="input-field col s3">
+                                                <input id="tahun_pnf" name="tahun_pnf[]" type="number" class="validate" value="" >
+                                                <label for="tahun_pnf">Tahun</label>
+
+                                            </div>
+                                            <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addpnf"><i
+                                                            class="material-icons right">add</i>button</button>
+                                                             </div>
+                                                             </div>
+                                        <div class="step-actions">
+                                        
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing" id="pendidikanclick">Continue</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                        </div>
+                                        
+                                    </div>
+                                    </li>
+                                    
+                                <li class="step ">
+                                <div class="step-title waves-effect waves-dark">Riwayat organisasi</div>
+                                <div class="step-content">
+                                <h5>Pengalaman organisasi</h5>
+
+                                <div class="row" id="po">
+                                        
+                                        <div class="input-field col s4">
+                                            <input id="jabatan_po" name="jabatan_po[]" type="text" class="validate" value="">
+                                            <label for="jabatan_po">Jabatan</label>
+
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="instansi_po" name="instansi_po[]" type="text" class=" validate" value="">
+                                            <label for="instansi_po">Instansi</label>
+
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input id="tahun_po" name="tahun_po[]" type="number" class=" validate" value="">
+                                            <label for="tahun_po">Tahun</label>
+
+                                        </div>
+                                        <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addpo"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+                                        
+                                        
+                                    </div>
+                                    <br>
+                                    <h5>Organisasi Yang Sedang Diikuti</h5>
+                                    
+                                    <div class="row" id="sd">
+                                        
+                                            <div class="input-field col s4">
+                                                <input id="jabatan_sd" name="jabatan_sd[]" type="text" class="validate" value="">
+                                                <label for="jabatan_sd">Jabatan</label>
+
+                                            </div>
+                                            <div class="input-field col s4">
+                                                <input id="instansi_sd" name="instansi_sd[]" type="text" class=" validate" value="">
+                                                <label for="instansi_sd">Instansi</label>
+
+                                            </div>
+                                            <div class="input-field col s3">
+                                                <input id="tahun_sd" name="tahun_sd[]" type="number" class=" validate" value="">
+                                                <label for="tahun_sd">Tahun</label>
+
+                                            </div>
+                                            <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addsd"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                            </div>
+                                        
+                                    </div>
+                                    <div class="step-actions">
+                                        <button id="organisasiclick"class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing">Continue</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                    </div>
+                                    </li>
+                                    
+
+                                <li class="step ">
+                                <div class="step-title waves-effect waves-dark">Riwayat Kepanitiaan</div>
+                                <div class="step-content">
+                                <h5>Pengalaman Kepanitiaan</h5>
+                                    
+                                    <div class="row" id="pk">
+                                        
+                                        <div class="input-field col s4">
+                                            <input id="jabatan_pk" name="jabatan_pk[]" type="text" class="validate" value="">
+                                            <label for="jabatan_pk">Jabatan</label>
+
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="acara_pk" name="acara_pk[]" type="text" class=" validate" value="">
+                                            <label for="acara_pk">Nama Acara</label>
+
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input id="tahun_pk" name="tahun_pk[]" type="number" class=" validate" value="">
+                                            <label for="tahun_pk">Tahun</label>
+
+                                        </div>
+                                        <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addpk"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+                                        
+                                    </div>
+                                    <br>
+
+                                    <h5>Kepanitiaan Yang Sedang/Akan Diikuti 6 Bulan Kedepan</h5>
+                                    
+                                    <div class="row" id="ad">
+                                        
+                                        <div class="input-field col s4">
+                                            <input id="jabatan_ad" name="jabatan_ad[]" type="text" class="validate" value="">
+                                            <label for="jabatan_ad">Jabatan</label>
+
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="acara_ad" name="acara_ad[]" type="text" class=" validate" value="">
+                                            <label for="acara_ad">Nama Acara</label>
+
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input id="tahun_ad" name="tahun_ad[]" type="number" class=" validate" value="">
+                                            <label for="tahun_ad">Tahun</label>
+
+                                        </div>
+                                        <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addad"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+
+                                        </div>
+                                    <div class="step-actions">
+                                        <button id="panitiaclick"class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing">Continue</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                    </div>
+                                    </li>
+                                    
+
+                                <li class="step ">
+                                <div class="step-title waves-effect waves-dark">Prestasi</div>
+                                <div class="step-content">
+                                <h5>Prestasi</h5>
+                                    
+                                    <div class="row" id="p">
+                                        
+                                        <div class="input-field col s4">
+                                            <input id="tingkat_p" name="tingkat_p[]" type="text" class="validate" value="">
+                                            <label for="tingkat_p">Tingkat</label>
+
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="acara_p" name="acara_p[]" type="text" class=" validate" value="">
+                                            <label for="acara_p">Prestasi</label>
+
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input id="tahun_p" name="tahun_p[]" type="number" class=" validate" value="">
+                                            <label for="tahun_p">Tahun</label>
+
+                                        </div>
+                                        <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addp"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+                                        
+                                    </div>
+                                    <br>
+                                    <h5>Pengalaman Pembicara / Narasumber / Trainer</h5>
+                                    
+                                    <div class="row" id="t">
+                                        
+                                        <div class="input-field col s4">
+                                            <input id="tingkat_t" name="tingkat_t[]" type="text" class="validate" value="">
+                                            <label for="tingkat_t">Tingkat</label>
+
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input id="acara_t" name="acara_t[]" type="text" class=" validate" value="">
+                                            <label for="acara_t">Selaku & Nama Acara</label>
+
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input id="tahun_t" name="tahun_t[]" type="number" class=" validate" value="">
+                                            <label for="tahun_t">Tahun</label>
+
+                                        </div>
+                                        <div class="input-field col s1">
+                                                              <button class="btn-floating  btn-small" type="button" id="addt"><i
+                                                             class="material-icons right">add</i>button</button>
+                                                             </div>
+                                        
+                                    </div>
+                                    <div class="step-actions">
+                                        <button id="prestasiclick" class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing" id="riwayatclick">CONTINUE</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="step active">
+                                <div class="step-title waves-effect waves-dark">Fasilitas, Jaringan dan Skill</div>
+                                <div class="step-content">
+                                    <p>Silahkan pilih untuk fasilitas yang dimiliki</p>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <p>
+                                                <label>
+                                                    <input name='fasilitas[]' type="checkbox" id="Drone"
+                                                        value='Drone' />
+                                                    <span>Drone</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='fasilitas[]' type="checkbox" id="Mobil"
+                                                        value='Mobil' />
+                                                    <span>Mobil</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='fasilitas[]' type="checkbox" id="Laptop"
+                                                        value='Laptop/Tab' />
+                                                    <span>Laptop/Tab</span>
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="col s6">
+                                            <p>
+                                                <label>
+                                                    <input name='fasilitas[]' type="checkbox" id="Kamera"
+                                                        value='Kamera Digital' />
+                                                    <span>Kamera Digital</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='fasilitas[]' type="checkbox" id="Motor"
+                                                        value='Motor' />
+                                                    <span>Motor</span>
+                                                </label>
+                                            </p>
+                                            <input type="text" for="lainnya" id="lainnya1"name="fasilitas[]" placeholder="lainnya : ...">
+                                        </div>
+                                    </div>
+
+                                    <p>Silahkan pilih untuk jaringan yang dimiliki</p>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <p>
+                                                <label>
+                                                    <input name='jaringan[]' type="checkbox" id="Transportasi"
+                                                        value='Transportasi' />
+                                                    <span>Transportasi</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='jaringan[]' type="checkbox" id="Public"
+                                                        value='Public Figure' />
+                                                    <span>Public Figure</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='jaringan[]' type="checkbox" id="Desain"
+                                                        value='Desain Grafis / Percetakan' />
+                                                    <span>Desain Grafis / Percetakan</span>
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="col s6">
+                                            
+                                            <p>
+                                                <label>
+                                                    <input name='jaringan[]' type="checkbox" id="Pesta"
+                                                        value='Peralatan Pesta' />
+                                                    <span>Peralatan Pesta</span>
+                                                </label>
+                                            </p>
+                                            
+                                            <p>
+                                                <label>
+                                                    <input name='jaringan[]' type="checkbox" id="Katering"
+                                                        value='Katering / Makanan' />
+                                                    <span>Katering / Makanan</span>
+                                                </label>
+                                            </p>
+                                            
+                                            <input type="text" for="lainnya" id="lainnya2"name="jaringan[]" placeholder="lainnya : ...">
+                                        </div>
+                                    </div>
+
+                                    <p>Silahkan pilih untuk keahlian yang dimiliki</p>
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <p>
+                                                <label>
+                                                    <input name='keahlian[]' type="checkbox" id="Grafis"
+                                                        value='Desain Grafis' />
+                                                    <span>Desain Grafis</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='keahlian[]' type="checkbox" id="Multimedia"
+                                                        value='Multimedia / Videografi' />
+                                                    <span>Multimedia / Videografi</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='keahlian[]' type="checkbox" id="Ceremony"
+                                                        value='Master of Ceremony' />
+                                                    <span>Master of Ceremony</span>
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="col s6">
+                                            <p>
+                                                <label>
+                                                    <input name='keahlian[]' type="checkbox" id="Musik"
+                                                        value='Bermain Alat Musik' />
+                                                    <span>Bermain Alat Musik</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input name='keahlian[]' type="checkbox" id="Menyetir"
+                                                        value='Menyetir Mobil' />
+                                                    <span>Menyetir Mobil</span>
+                                                </label>
+                                            </p>
+                                            <input type="text" for="lainnya" id="lainnya3" name="keahlian[]" placeholder="lainnya : ...">
+                                        </div>
+                                    </div>
+
+                                    <div class="step-actions">
+                                        <button id="fasilitasclick"class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing">CONTINUE</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="step">
+                                <div class="step-title waves-effect waves-dark">Finally</div>
+                                <div class="step-content">
+                                    <!-- <div class="input-field col s12">
+                                        <select name="pilihan1">
+                                            <option value="" selected disabled>PILIH PROKER</option>
+                                            
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea2" class="materialize-textarea" name="alasan1"
+                                                ></textarea>
+                                            <label for="textarea2">Alasan</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field col s12 myd-none">
+                                        <select name="pilihan2">
+                                            <option value="" disabled selected>-- Pilih Kementerian Kedua --</option>
+                                            
+                                                    <option value=""></option>";
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="row myd-none">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea" name="alasan2"
+                                                ></textarea>
+                                            <label for="textarea1" >Alasan</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="portofolio" class="materialize-textarea" name="portofolio"
+                                                ></textarea>
+                                            <label for="portofolio">Link Persyaratan berkas (Jadikan satu link di google drive)</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 myd-none">
+                                            <textarea id="textarea3" class="materialize-textarea" name="alasan_umum"
+                                                ></textarea>
+                                            <label for="textarea3">Alasan Masuk EM</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea4" class="materialize-textarea" name="target"
+                                                ></textarea>
+                                            <label for="textarea4">Sebutkan target selama menjadi ketua pelaksana</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea5" class="materialize-textarea" name="ide_kreatif"
+                                                ></textarea>
+                                            <label for="textarea5">Ide Kreatif yang ingin direalisasikan untuk proker yang dipilih</label>
+                                        </div>
+                                    </div>
+                                    <div class="step-actions">
+                                        <button class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing" id="daftarclick">CONTINUE</button>
+                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-title waves-effect waves-dark">Finally</div>
+                                <div class="step-content"> -->
+                                    
+                                    <!-- <div class="input-field myd-none" >
+                                        <select name="tiket">
+                                            <option value="" disabled selected>-- Pilih Jadwal Screening --</option>
+                                            
+                                                            <option disabled ></option>";
+                                                            
+                                                        <option value=""></option>";
+                                                       
+                                                        <option disabled value=""></option>";
+                                                    
+                                        </select>
+                                    </div> -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" class="filled-in" id="persetujuan    " required/>
+                                                    <span>Saya menyatakan bahwa data yang saya isikan benar dan siap bertanggung jawab dengan data yang diisikan</span>
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                    <div class="col s12 right-align">
+                                        
+                                        <!-- <button class="btn waves-effect waves-light right-align" id="finish">Submit 
+                                            <i class="material-icons right">send</i>
+                                        </button> -->
+                                        <a id="submit" class="right-align btn waves-effect">Submit Form</a>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="jquery.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="https://unpkg.com/materialize-stepper@3.0.0-beta.1.0.1/dist/js/mstepper.min.js"></script>  
+    <script src="../js/idb.js"></script>  
+    <script src="formapps.js"></script>
+    <script src="validate.js"></script>
+    
+    <script src="add.js"></script>
+    <script>
+        // var Calendar = document.querySelector('.datepicker');
+        // M.Datepicker.init(Calendar, {'yearRange':22,'format':'yyyy-mm-dd'});
+
+        // var elems = document.querySelectorAll('select');
+        // M.FormSelect.init(elems, {});
+
+        // $(document).ready(function () {
+        //     $('textarea#textarea1 , textarea#textarea2, textarea#textarea3, textarea#textarea4, textarea#textarea5').characterCounter();
+        // });
+
+        function anyThing(destroyFeedback) {
+            setTimeout(function () { destroyFeedback(true); }, 1500);
+        }
+
+        function noThing(destroyFeedback) {
+            setTimeout(function () { destroyFeedback(true); }, 10000);
+        }
+
+        var stepperDiv = document.querySelector('.stepper');
+        console.log(stepperDiv);
+        var stepper = new MStepper(stepperDiv);
+
+    </script>
+</body>
+
+</html>

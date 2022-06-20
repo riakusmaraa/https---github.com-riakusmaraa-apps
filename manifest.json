@@ -1,0 +1,22 @@
+{
+  "dir": "ltr",
+  "lang": "Indonesian",
+  "name": "EM Apps",
+  "gcm_sender_id": "1959050664", "scope": "/",
+  "display": "standalone",
+  "start_url": "https://em.ub.ac.id/apps/",
+  "short_name": "EM Apps",
+  "theme_color": "#981c30",
+  "description": "EM Apps Adalah gateway informasi di Eksekutif Mahasiswa Universitas Brawijaya",
+  "orientation": "portrait-primary",
+  "background_color": "#fff",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://em.ub.ac.id/apps/img/logobg.png",
+      "type": "image/png",
+      "sizes": "625x625"
+    }
+  ]
+}

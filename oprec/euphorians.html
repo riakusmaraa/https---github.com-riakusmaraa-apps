@@ -1,0 +1,187 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/emstyle.css" />
+    <link rel="stylesheet" href="../css/emsresponsive.css" />
+    <link rel="stylesheet" href="../css/animations.scss" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../oprec/oprecwait.css" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link href="../img/LOGO_EM_2020.png" rel="icon" />
+    <title>Open Recruitment</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-115066231-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-115066231-1");
+    </script>
+  </head>
+  <body>
+    <div class="progress" id="loader">
+      <div class="indeterminate"></div>
+    </div>
+    <section id="avaheader">
+      <img id="foto" src="" alt="" class="profileava" />
+      <div class="profilecontent">
+        <h4>SELAMAT DATANG</h4>
+        <b><h4 id="nama"></h4></b>
+        <h4 id="agenda"></h4>
+        <p id="guide" class="text-center"></p>
+      </div>
+    </section>
+
+    <section id="waitingcontent">
+      <div class="container">
+        <h4 class="h6 text-center pt-3 pemberitahuan">
+          Are you ready to be part of Euphorians crew 2020💥?
+        </h4>
+       <h5 class="h6 text-center pt-3 pemberitahuan">
+          Jangan lupa unduh form 1 dan form 2 lalu kirim ke CP Euphorians dengan format 
+          <i>DivisiPilihanPertama_Nama_NIM</i> 
+          <br>
+          <b>CP: Ivanka (ID Line: ivankarhm, WA: 087846150078)</b>
+          <br> Contoh <b>PIT_Rara_1951xxxxx</b> 
+        </h5>
+
+        <h5 class="h6 text-center pt-3 pemberitahuan">
+          Serta jangan lupa untuk meingisi biodata dengan lengkap terlebih dahulu yaa!!
+        </h5>
+      </div>
+
+       <div class="btn3p text-center">
+        <div class="btn3pdiv" id="edit">
+          <img src="../img/3Proker/icon/ICON EDIT.svg" alt="" />
+          <button id="editbtn" type="button" class="btnactive ripple">
+            BIODATA
+          </button>
+        </div>
+        <div class="btn3pdiv" id="pilihan"></div>
+        <div class="btn3pdiv" id="formulir"></div>
+        <div class="btn3pdiv" id="twibbon"></div>
+        <div class="btn3pdiv" id="pengumuman"></div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Pilihan
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <select name="pilihan1">
+                <option value="" selected disabled>--PILIHAN PERTAMA</option>
+              </select>
+              <label for="textarea1">Alasan Memilih pilihan pertama</label>
+              <textarea
+                id="textarea1"
+                class="materialize-textarea"
+                name="alasan1"
+              ></textarea>
+              <select name="pilihan2" class="mt-3">
+                <option value="" disabled selected>--PILIHAN KEDUA</option>
+              </select>
+              <label for="textarea2">Alasan Memilih pilihan kedua</label>
+              <textarea
+                id="textarea2"
+                class="materialize-textarea"
+                name="alasan2"
+              ></textarea>
+              <label for="textarea3">Alasan mendaftar Staff Euphoria Brawijayans 2020</label>
+              <textarea
+                id="textarea3"
+                class="materialize-textarea"
+                name="alasan_umum"
+              ></textarea
+              >
+              <label for="textarea5"
+                >Komitmen anda jika terpilih sebagai Staff Euphoria Brawijayans 2020</label
+              >
+              <textarea
+                id="textarea5"
+                class="materialize-textarea"
+                name="ide_kreatif"
+              ></textarea>
+              <label for="tiket">Pilih Jadwal Screening</label>
+              <select id="tiket" name="tiket">
+                <option value="" disabled selected
+                  >-- Pilih Jadwal Screening --</option
+                >
+              </select>
+            </div>
+            <div class="container">
+                <h5 class="h6 text-center pt-3 pemberitahuan">
+                  Jangan lupa follow dan share salah satu postingan Euphorians di snapgram kalian kemudian tag @euphorians2020. Tunjukkan buktinya berupa screenshot saat screening yaa!!
+                </h5>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary" id="daftarclick">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="../oprec.html">
+      <i id="backicon" class="fas fa-arrow-left backicon"></i>
+    </a>
+    <div id="refreshbtn"></div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/idb.js"></script>
+    <script src="../js/oprecwait.js"></script>
+  </body>
+</html>
